@@ -1,5 +1,10 @@
 # Changelog
 
+## 4.14.2 - 2023-02-06 - Deprecated 🛑
+
+- Library is now deprecated. For help migrating, refer to the [documentation for `usb`](https://github.com/node-usb/node-usb#migrating-from-node-usb-detection)
+
+
 ## 4.14.1 - 2022-03-10
 
 - Attempt to get more build more prebuild binaries. Still missing a lot!
