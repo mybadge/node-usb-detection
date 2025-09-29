@@ -12,9 +12,10 @@
     "lint": "eslint **/*.js",
     "validate": "npm run lint && npm test",
     "test": "jasmine ./test/test.js",
-    "prebuild": "npm run prebuild-node && npm run prebuild-electron",
+    "prebuild": "npm run prebuild-electron",
     "prebuild-node": "prebuild --force --strip --verbose -t 22.0.0 -t 18.0.0 -t ",
-    "prebuild-electron": "prebuild --force --strip --verbose -t 22.0.0 -t 18.0.0 ",
+    "prebuild-electron": "prebuild --force --strip --verbose -r electron -t 37.0.0 -t 18.0.0 --prebuild-output 'prebuilds'",
+
     "prebuild-upload": "prebuild --upload-all",
     "rebuild": "node-gyp rebuild"
   },
