@@ -13,8 +13,8 @@
     "validate": "npm run lint && npm test",
     "test": "jasmine ./test/test.js",
     "prebuild": "npm run prebuild-node && npm run prebuild-electron",
-    "prebuild-node": "prebuild --force --strip --verbose -t 18.0.0",
-    "prebuild-electron": "prebuild --force --strip --verbose -r electron -t 18.0.0",
+    "prebuild-node": "prebuild --force --strip --verbose -t 22.0.0 -t 18.0.0 -t ",
+    "prebuild-electron": "prebuild --force --strip --verbose -t 22.0.0 -t 18.0.0 ",
     "prebuild-upload": "prebuild --upload-all",
     "rebuild": "node-gyp rebuild"
   },
@@ -46,7 +46,7 @@
   "dependencies": {
     "bindings": "^1.5.0",
     "eventemitter2": "^5.0.1",
-    "nan": "^2.15.0",
+    "nan": "^2.23.0",
     "prebuild-install": "^7.0.1"
   },
   "devDependencies": {
@@ -54,8 +54,8 @@
     "chalk": "^2.4.1",
     "eslint": "^4.19.1",
     "jasmine": "^3.1.0",
-    "node-abi": "^3.77.0",
-    "node-gyp": "^8.4.0",
-    "prebuild": "^11.0.3"
+    "node-abi": "^4.14.0",
+    "node-gyp": "^11.4.2",
+    "prebuild": "^13.0.1"
   }
 }
